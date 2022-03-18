@@ -53,8 +53,9 @@ max_dict = {time_list[0]: 9999, time_list[1]: 15999, time_list[2]: 0, time_list[
 time_bj = datetime.datetime.today() + datetime.timedelta(hours=8)
 now = time_bj.strftime("%Y-%m-%d %H:%M:%S")
 headers = {'User-Agent': 'MiFit/5.3.0 (iPhone; iOS 14.7.1; Scale/3.00)'}
-
-
+print("当前时间")
+print(now)
+print("----------")
 #获取区域天气情况
 def getWeather():
     if area == "NO":
